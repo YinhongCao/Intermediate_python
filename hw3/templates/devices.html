@@ -1,0 +1,21 @@
+<!-- templates/control_flow.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Devices
+    </title>
+  </head>
+  <body>
+    <p>Hello these are the devices in {{ home.address }}</p>
+    <p>
+      <ul>
+        {% for device in home.devices %}
+          <li>
+            <em>{{ device.name }}:</em> {{ device.manufacturer }}
+          </li>
+        {% endfor %}
+        </ul>
+    </p>
+  </body>
+</html>
